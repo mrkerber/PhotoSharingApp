@@ -1,9 +1,7 @@
-# A simple photo sharing app
+# A firebase hosted photo sharing app
 
-### -Built using the expo framework for React Native
+#### -Built using the expo framework for React Native
 
-### -Written in TypeScript
+#### -Written in TypeScript
 
-### -User data are hosted on Firebase Realtime DB
-
-### -User images are hosted on Firebase Storage
+#### -Data hosted on Firebase Realtime DB, images on Firebase Storage
