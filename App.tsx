@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
    }
 });
 
-
+/* NEED TO WRAP IN ENV FILE */
 const firebaseConfig = {
    apiKey: "AIzaSyBF1KogKCFW6Qd9Bxq7p3FvLcjy-jJfCsw",
    authDomain: "roll-1516f.firebaseapp.com",

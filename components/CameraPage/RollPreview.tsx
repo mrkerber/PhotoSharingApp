@@ -29,10 +29,6 @@ const RollPreview = (props) => {
          return 13
    }
 
-   // React.useEffect(() => {
-   //    // console.log('updated rolls, effecting')
-   // }, availableRolls)
-
    const rollPickerHandler = (rollTitle, rollID) => {
       props.onRollChange(rollID)
    }

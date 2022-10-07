@@ -21,7 +21,7 @@ const CameraPage = (props) => {
       setCurrentRoll(newRoll);
    }
 
-   let getCurrentRollAsync = async (): Promise<FilmRoll> => {
+   const getCurrentRollAsync = async (): Promise<FilmRoll> => {
       return new Promise<FilmRoll>(async(resolve, reject) => {
          DBConnect.fetchCurrentRollID('mrkerber').then((rollID) => {
             DBConnect.fetchRoll(rollID).then((roll) => {
@@ -31,7 +31,7 @@ const CameraPage = (props) => {
       })
    }
 
-   let uploadPicture = async (newPhoto: Photo) => {
+   const uploadPicture = async (newPhoto: Photo) => {
       const resizedPhoto = await manipulateAsync(
          newPhoto.uri,
          [
@@ -48,13 +48,13 @@ const CameraPage = (props) => {
       })
    }
    
-   let setCameraDimensionsAsync = async () => {
+   const setCameraDimensionsAsync = async () => {
       let screenWidth = Dimensions.get('window').width;
       let screenHeight = Math.round((screenWidth * 4) / 3);
       setCameraDimensions({width:screenWidth,height:screenHeight});
    }
 
-   let openCameraAsync = async () => {
+   const openCameraAsync = async () => {
       let permissionResult = await Camera.requestCameraPermissionsAsync();
       if (permissionResult.granted === true) {
          await getCurrentRollAsync().then((roll) => {
@@ -68,7 +68,7 @@ const CameraPage = (props) => {
       }
    }
 
-   let capturePhotoAsync = async () => {
+   const capturePhotoAsync = async () => {
       if (!cameraActive) return;
       let capturedPhoto = await cameraRef.takePictureAsync()
       console.log(capturedPhoto)

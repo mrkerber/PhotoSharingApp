@@ -5,6 +5,7 @@ import GeneratePushID from './GeneratePushID';
 import * as StorageConnect from './StorageConnect';
 import { FilmRoll } from '../interfaces/FilmRoll';
 
+/* NEED TO WRAP IN ENV FILE */
 const firebaseConfig = {
    apiKey: "AIzaSyBF1KogKCFW6Qd9Bxq7p3FvLcjy-jJfCsw",
    authDomain: "roll-1516f.firebaseapp.com",

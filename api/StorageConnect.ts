@@ -3,6 +3,7 @@ import { onValue } from 'firebase/database';
 import { getStorage, uploadBytes, getDownloadURL, ref } from "firebase/storage";
 import { uuid } from 'uuid';
 
+/* NEED TO WRAP IN ENV FILE */
 const firebaseConfig = {
    apiKey: "AIzaSyBF1KogKCFW6Qd9Bxq7p3FvLcjy-jJfCsw",
    authDomain: "roll-1516f.firebaseapp.com",
